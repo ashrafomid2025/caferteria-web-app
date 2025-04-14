@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <script
+      src="https://kit.fontawesome.com/409fdf9367.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="slider.js" defer></script>
     <link rel="stylesheet" href="../src/output.css" />
   </head>
   <body>
@@ -23,15 +28,77 @@
               >Blog</a
             >
           </li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Pages</a></li>
+          <li>
+            <a
+              href=""
+              class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
+              >Pages</a
+            >
+          </li>
           <li><a href="">contact Us</a></li>
         </ul>
       </div>
       <!-- navbar end -->
       <div
+        id="hero"
         class="h-screen bg-cover -z-10 absolute top-0 left-0 w-full bg-[url(../public/images/slide1.jpg)]"
-      ></div>
+      >
+        <div
+          class="relative flex justify-between items-center h-screen space-x-3 px-3.5"
+        >
+          <button id="btn-left">
+            <i
+              class="fa-solid fa-chevron-left h-14 py-4 leading-14 text-2xl w-14 bg-gray-300 rounded-full text-white"
+            ></i>
+          </button>
+          <button id="btn-right">
+            <i
+              class="fa-solid fa-chevron-right h-14 py-4 leading-14 w-14 text-2xl bg-gray-300 rounded-full text-white"
+            ></i>
+          </button>
+        </div>
+        <div class="">
+          <div id="div1" class="absolute top-60 left-0 hidden w-full z-50">
+            <div>
+              <h2>Welcome</h2>
+              <h1>Coffee House</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                voluptate laudantium quos nisi ducimus ipsa esse magni
+                blanditiis saepe magnam officia corrupti deleniti maiores quas,
+                beatae pariatur perferendis iusto obcaecati.
+              </p>
+            </div>
+            <div id="div2" class="hidden absolute top-60 w-full left-0 z-50">
+              <h2>Welcome</h2>
+              <h1>Coffee House</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                voluptate laudantium quos nisi ducimus ipsa esse magni
+                blanditiis saepe magnam officia corrupti deleniti maiores quas,
+                beatae pariatur perferendis iusto obcaecati.
+              </p>
+            </div>
+            <div id="div3" class="hidden z-50 absolute top-60 left-0 w-full">
+              <h2>Welcome</h2>
+              <h1>Coffee House</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                voluptate laudantium quos nisi ducimus ipsa esse magni
+                blanditiis saepe magnam officia corrupti deleniti maiores quas,
+                beatae pariatur perferendis iusto obcaecati.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
