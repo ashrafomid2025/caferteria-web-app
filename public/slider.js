@@ -1,9 +1,10 @@
 const slider = document.getElementById("hero");
 const btnRight = document.getElementById("btn-right");
 const btnLeft = document.getElementById("btn-left");
-const div1 = document.getElementById("div1");
-const div2 = document.getElementById("div2");
-const div3 = document.getElementById("div3");
+const div1 = document.getElementById("div1")
+const div2 = document.getElementById("div2")
+const div3 = document.getElementById("div3")
+
 const links = [
     "../public/images/slide1.jpg",
     "../public/images/slide2.jpg",
@@ -30,23 +31,23 @@ btnRight.addEventListener("click",()=>{
 setInterval(()=>{
     slider.style.backgroundImage  = `url(${links[index]})`;
     index = (index +1) % links.length;
-    if(index === 0){
-        div1.classList.add("text-center");
+    if(index==1){
         div1.classList.remove("hidden");
-        div2.classList.add("hidden");
-        div3.classList.add("hidden");
+        div1.classList.add("flex");
+        div2.classList.add("hidden")
+        div3.classList.add("hidden")
     }
-
-    else if(index ===1 ){
-        div2.classList.add("text-right");
+    else if(index==2){
         div2.classList.remove("hidden");
+        div2.classList.add("flex");
         div1.classList.add("hidden");
         div3.classList.add("hidden");
     }
     else{
-        div3.classList.add("text-center");
         div3.classList.remove("hidden");
+        div3.classList.add("flex");
+        div1.classList.add("hidden");
         div2.classList.add("hidden");
-        div3.classList.add("hidden");
     }
+    
 },5000);

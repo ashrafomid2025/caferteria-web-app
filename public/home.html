@@ -21,19 +21,41 @@
         <ul class="flex space-x-7 items-center">
           <li><a href="">Home</a></li>
           <li><a href="">About Us</a></li>
-          <li>
+          <li class="relative group">
             <a
               href=""
               class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
-              >Blog</a
+              >Blog
+            </a>
+            <ul
+              class="absolute right-0 hidden group-hover:block bg-white shadow-lg min-w-[160px] mt-1 rounded-md z-50"
             >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Latest</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Newest</a>
+              </li>
+            </ul>
           </li>
-          <li>
+          <li class="relative group">
             <a
               href=""
               class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
               >Menu</a
             >
+            <ul
+              class="absolute right-0 hidden group-hover:block bg-white shadow-lg min-w-[160px] mt-1 rounded-md z-50"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Drink</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >Fast Food</a
+                >
+              </li>
+            </ul>
           </li>
           <li>
             <a
@@ -64,36 +86,46 @@
             ></i>
           </button>
         </div>
-        <div class="">
-          <div id="div1" class="absolute top-60 left-0 hidden w-full z-50">
-            <div>
-              <h2>Welcome</h2>
-              <h1>Coffee House</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                voluptate laudantium quos nisi ducimus ipsa esse magni
-                blanditiis saepe magnam officia corrupti deleniti maiores quas,
-                beatae pariatur perferendis iusto obcaecati.
+        <div class="h-full w-full">
+          <div
+            id="div1"
+            class="absolute hidden w-full h-full justify-start items-center top-0 px-4"
+          >
+            <div class="text-center w-[30%] text-2xl]">
+              <h2 class="font-bold font-kalam text-4xl uppercase">Welcome</h2>
+              <h2 class="text-5xl">Coffee House</h2>
+              <p class="text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quae consequuntur fuga eius, veniam doloribus quasi
+                voluptates
               </p>
             </div>
-            <div id="div2" class="hidden absolute top-60 w-full left-0 z-50">
-              <h2>Welcome</h2>
-              <h1>Coffee House</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                voluptate laudantium quos nisi ducimus ipsa esse magni
-                blanditiis saepe magnam officia corrupti deleniti maiores quas,
-                beatae pariatur perferendis iusto obcaecati.
+          </div>
+          <div
+            id="div2"
+            class="absolute hidden w-full h-full justify-end items-center top-0 px-4"
+          >
+            <div class="text-center w-[30%] text-2xl]">
+              <h2 class="font-bold font-kalam text-4xl uppercase">Welcome</h2>
+              <h2 class="text-5xl">Coffee House</h2>
+              <p class="text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quae consequuntur fuga eius, veniam doloribus quasi
+                voluptates
               </p>
             </div>
-            <div id="div3" class="hidden z-50 absolute top-60 left-0 w-full">
-              <h2>Welcome</h2>
-              <h1>Coffee House</h1>
+          </div>
+          <div
+            id="div3"
+            class="absolute w-full h-full hidden flex-col justify-center items-center top-0 px-4"
+          >
+            <div class="text-center w-[30%] text-2xl]">
+              <h2 class="font-bold font-kalam text-4xl uppercase">Welcome</h2>
+              <h2 class="text-5xl">Coffee House</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                voluptate laudantium quos nisi ducimus ipsa esse magni
-                blanditiis saepe magnam officia corrupti deleniti maiores quas,
-                beatae pariatur perferendis iusto obcaecati.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quae consequuntur fuga eius, veniam doloribus quasi
+                voluptates
               </p>
             </div>
           </div>

@@ -4,3 +4,8 @@
   --color-transparent-white: rgba(255, 255, 255, 0.2);
   --font-kalam: "Kalam-Regular", cursive;
 }
+@layer utilities {
+  .ul {
+    display: block;
+  }
+}
