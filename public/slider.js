@@ -11,87 +11,42 @@ const links = [
 ];
 let index = 0;
 
-// btnLeft.addEventListener("click",()=>{
-//     slider.style.backgroundImage = `url(${links[index]})`;
-//     index = (index +1) % links.length;
-   
-// })
-// btnRight.addEventListener("click",()=>{
-//     slider.style.backgroundImage = `url(${links[index]})`;
-//     index = (index +1) % links.length;
-    
-// })
-
-
-
-
-
-
-// setInterval(()=>{
-//     slider.style.backgroundImage  = `url(${links[index]})`;
-//     if(index === 0){
-//         div1.classList.add("text-center");
-//         div1.classList.remove("hidden");
-//         div2.classList.add("hidden");
-//         div3.classList.add("hidden");
-//     }
-
-//     else if(index ===1 ){
-//         div2.classList.add("text-right");
-//         div2.classList.remove("hidden");
-//         div1.classList.add("hidden");
-//         div3.classList.add("hidden");
-//     }
-//     else{
-//         div3.classList.add("text-center");
-//         div3.classList.remove("hidden");
-//         div1.classList.add("hidden");
-//         div2.classList.add("hidden");
-//     }
-//     index = (index +1) % links.length;
-    
-// },5000);
-btnLeft.addEventListener("click", () => {
-    index = (index - 1 + links.length) % links.length;
-    updateSlider();
-});
-
-btnRight.addEventListener("click", () => {
-    index = (index + 1) % links.length;
-    updateSlider();
-});
-
-// Auto slider every 5 seconds
-setInterval(() => {
-    index = (index + 1) % links.length;
-    updateSlider();
-}, 5000);
-function updateSlider() {
+btnLeft.addEventListener("click",()=>{
     slider.style.backgroundImage = `url(${links[index]})`;
+    index = (index +1) % links.length;
+   
+})
+btnRight.addEventListener("click",()=>{
+    slider.style.backgroundImage = `url(${links[index]})`;
+    index = (index +1) % links.length;
+    
+})
 
-    // Reset all text align classes (optional, but cleaner)
-    div1.classList.remove("text-center", "text-right");
-    div2.classList.remove("text-center", "text-right");
-    div3.classList.remove("text-center", "text-right");
 
-    if (index === 0) {
+
+
+
+
+setInterval(()=>{
+    slider.style.backgroundImage  = `url(${links[index]})`;
+    index = (index +1) % links.length;
+    if(index === 0){
         div1.classList.add("text-center");
         div1.classList.remove("hidden");
         div2.classList.add("hidden");
         div3.classList.add("hidden");
-    } else if (index === 1) {
+    }
+
+    else if(index ===1 ){
         div2.classList.add("text-right");
         div2.classList.remove("hidden");
         div1.classList.add("hidden");
         div3.classList.add("hidden");
-    } else {
+    }
+    else{
         div3.classList.add("text-center");
         div3.classList.remove("hidden");
-        div1.classList.add("hidden");
         div2.classList.add("hidden");
+        div3.classList.add("hidden");
     }
-}
-
-
-// Initial display
-updateSlider();
+},5000);
