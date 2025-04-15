@@ -10,25 +10,28 @@
     ></script>
     <script src="slider.js" defer></script>
     <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="../public/fontawesome/css/all.min.css" />
   </head>
   <body>
-    <div class="font-kalam relative">
+    <div class="font-kalam relative w-full">
       <!-- navbar start -->
-      <div class="flex justify-between z-40 p-3.5">
+      <div class="flex justify-between z-40 lg:p-3.5">
         <div>
           <img src="../public/images/logo.png" alt="" />
         </div>
-        <ul class="flex space-x-7 items-center uppercase">
+        <ul
+          class="lg:flex flex-col bg-gray-400 justify-between text-white px-4 py-2.5 sticky top-0 lg:text-black hidden h-screen lg:h-fit lg:bg-transparent lg:flex-row space-x-7 items-center uppercase"
+        >
           <li><a href="">Home</a></li>
           <li><a href="">About Us</a></li>
           <li class="relative group">
             <a
               href=""
-              class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
+              class="before:content-[''] relative lg:before:border-black before:border-white before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
               >Blog
             </a>
             <ul
-              class="absolute right-0 hidden group-hover:block bg-white shadow-lg min-w-[160px] mt-1 rounded-md z-50"
+              class="absolute right-0 hidden group-hover:block bg-white text-black shadow-lg min-w-[160px] mt-1 rounded-md z-50"
             >
               <li>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Latest</a>
@@ -45,10 +48,15 @@
               >Menu</a
             >
             <ul
-              class="absolute right-0 hidden group-hover:block bg-white shadow-lg min-w-[160px] mt-1 rounded-md z-50"
+              class="absolute right-0 hidden group-hover:block bg-white text-black shadow-lg min-w-[160px] mt-1 rounded-md z-50"
             >
               <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Drink</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Late</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >Expresso</a
+                >
               </li>
               <li>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-100"
@@ -57,12 +65,24 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="group relative">
             <a
               href=""
               class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
               >Pages</a
             >
+            <ul
+              class="absolute right-0 hidden group-hover:block bg-white text-black shadow-lg min-w-[160px] mt-1 rounded-md z-50"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Drinks</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >Fast Foods</a
+                >
+              </li>
+            </ul>
           </li>
           <li><a href="">contact Us</a></li>
         </ul>
@@ -73,7 +93,7 @@
         class="h-screen bg-cover -z-10 absolute top-0 left-0 w-full bg-[url(../public/images/slide1.jpg)]"
       >
         <div
-          class="relative flex justify-between items-center h-full space-x-3 px-3.5"
+          class="relative flex justify-between items-center h-full space-x-3 px-3.5 z-50"
         >
           <button id="btn-left">
             <i
@@ -82,19 +102,23 @@
           </button>
           <button id="btn-right">
             <i
-              class="fa-solid fa-chevron-right h-14 py-4 leading-14 w-14 text-2xl bg-gray-300 rounded-full text-white"
+              class="fa-solid fa-chevron-right h-14 py-4 leading-14 w-14 text-2xl bg-gray-300 rounded-full z-50 text-white"
             ></i>
           </button>
         </div>
-        <div class="h-full w-full">
+        <div class="h-full w-full absolute top-0">
           <div
             id="div1"
             class="absolute hidden w-full h-full justify-start items-center top-0 px-4"
           >
-            <div class="text-center w-[30%] text-2xl]">
-              <h2 class="font-bold font-kalam text-4xl uppercase">Welcome</h2>
-              <h2 class="text-5xl">Coffee House</h2>
-              <p class="text-xl">
+            <div class="text-center md:w-[60%] lg:w-[50%]">
+              <h2
+                class="font-bold font-kalam text-xl md:text-3xl lg:text-4xl uppercase"
+              >
+                Welcome
+              </h2>
+              <h2 class="text-2xl md:text-4xl lg:text-5xl">Coffee House</h2>
+              <p class="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente quae consequuntur fuga eius, veniam doloribus quasi
                 voluptates
@@ -105,7 +129,7 @@
             id="div2"
             class="absolute hidden w-full h-full justify-end items-center top-0 px-4"
           >
-            <div class="text-center w-[30%] text-2xl]">
+            <div class="text-center w-full lg:w-[50%] md:w-[60%]">
               <h2 class="font-bold font-kalam text-4xl uppercase">Welcome</h2>
               <h2 class="text-5xl">Coffee House</h2>
               <p class="text-xl">
@@ -119,7 +143,7 @@
             id="div3"
             class="absolute w-full h-full hidden flex-col justify-center items-center top-0 px-4"
           >
-            <div class="text-center w-[30%] text-2xl]">
+            <div class="text-center w-full lg:w-[50%] md:w-[60%]">
               <h2 class="font-bold font-kalam text-4xl uppercase">Welcome</h2>
               <h2 class="text-5xl">Coffee House</h2>
               <p>
